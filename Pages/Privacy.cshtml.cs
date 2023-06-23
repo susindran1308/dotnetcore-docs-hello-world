@@ -12,7 +12,7 @@ public class PrivacyModel : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public IActionResult OnGet()
     {
         // Define an array or list of valid HTTP error codes
         int[] validErrorCodes = { 400, 401, 403, 404, 500 };
