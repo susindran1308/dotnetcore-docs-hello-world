@@ -15,7 +15,7 @@ public class PrivacyModel : PageModel
     public IActionResult OnGet()
     {
         // Define an array or list of valid HTTP error codes
-        int[] validErrorCodes = { 101, 101, 101, 101, 200, 200, 200, 200, 400, 401, 403, 404, 406, 500, 501, 502, 400, 401, 403, 404, 406, 500, 501, 502, 503, 503, 301, 301, 301, 301, 301, 301 };
+        int[] validErrorCodes = { 101, 101, 101, 101, 200, 200, 200, 200, 401, 403, 404, 406, 500, 501, 502, 401, 403, 404, 406, 500, 501, 502, 503, 503, 301, 301, 301, 301, 301, 301 };
 
         // Generate a random index to select a random error code from the array/list
         Random random = new Random();
